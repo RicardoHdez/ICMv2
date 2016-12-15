@@ -1,0 +1,14 @@
+.subtitulo{
+    background: #585858;
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 90%;
+    position: relative;
+    bottom: 16px;
+    margin: 0 auto;
+    padding: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 5px 5px 5px #848484;
+}

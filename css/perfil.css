@@ -1,0 +1,17 @@
+#tabla_de_pagos{
+    text-align:  left;
+    background: #BDBDBD;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #848484;
+}
+#tituloPagos{
+    text-align: center;
+    background: #585858;
+    color: #FFFFFF;
+}
+#tituloAlumno{
+    text-align: center;
+    background: #585858;
+    color: #FFFFFF;
+}

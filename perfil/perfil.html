@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instituto Comercial Mexico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+    <script src="../js/jquery3.1.1.min.js" ></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body style="background:#D8D8D8;">
+
+<nav class="navbar navbar-default" style="background:#04B4AE;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../" style="background:#D8D8D8; color: #000000; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px;">Instituto Comercial Mexico</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a class="active" href="perfil.html" style="color: #FFFFFF; font-size: 20px;">Perfil<span class="sr-only">(current)</span></a></li>
+                <li><a href="../alumnos/alumnos.html" style="color: #FFFFFF; font-size: 20px;">Alumnos</a></li>
+                <li><a href="../estadocuenta/estadocuenta.html" style="color: #FFFFFF; font-size: 20px;">Estado de cuenta</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <!--Iniciar Sesion-->
+                <li><a href="#" style="color: #FFFFFF; font-size: 15px;"  data-toggle="modal" data-target="#login">Iniciar sesion</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Termina Navegacion-->
+<div>
+    <p class="subtitulo" style="text-align: center;">Perfil del alumno</p>
+</div>
+<!--Termina subtitulo-->
+<br>
+<!--table-->
+<div class="row">
+    <div class="col-md-6">
+        <table class="table" id="tabla_del_alumno" align="left" border="0" cellpadding="2" cellspacing="2" width="90%">
+        <tr align="center">
+            <td colspan="2" id="tituloAlumno" style="font-size:150%;"><strong>Datos Personales</strong></td>
+        </tr>
+        <tr>
+            <td style="font-size:150%;">Plantel:</td><td><input type="text" class="form-control" id="disabledInput" disabled value=""></td>
+        </tr>
+        <tr>
+            <td style="font-size:150%;">Nombre:</td><td><input type="text" class="form-control" id="disabledInput" disabled value=""></td>
+        </tr>
+        <tr>
+            <td style="font-size:150%;">Turno:</td><td><input type="text" class="form-control" id="disabledInput" disabled value=""></td>
+        </tr>
+        <tr>
+            <td style="font-size:150%;">Telefono Casa:</td><td><input type="text" class="form-control" id="disabledInput" disabled value=""></td>
+        </tr>
+        <tr>
+            <td style="font-size:150%;">Telefono Celular:</td><td><input type="text" class="form-control" id="disabledInput" disabled value=""></td>
+        </tr>
+        <tr>
+            <td style="font-size:150%;">Email:</td><td><input type="text" class="form-control" id="disabledInput" disabled value=""></td>
+        </tr>
+    </table>
+</div>
+    <!--///////////////////////////////////////////////////////////////-->
+    <div class="col-md-6"> 
+        <table class="table table-striped" id="tabla_de_pagos" align="center" border="0" cellpadding="2" cellspacing="2" width="100%">
+            <thead id="tituloPagos" style="font-size:150%;">
+                <th width='20%' colspan="1" rowspan="1" align="center">Mes</th> 
+                <th width='25%' colspan="1" rowspan="1" align="center">Tipo de pago</th>
+                <th width='15%' colspan="1" rowspan="1" align="center">Monto</th>
+                <th width='20%' colspan="1" rowspan="1" align="center">Debe</th>
+            </thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table> 
+    </div>
+</div>
+<!--End table-->
+<!--Modal de inicio de sesion-->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+          <h4 class="modal-title" id="myModalLabel">Iniciar sesión</h4>
+        </div>
+        <div class="modal-body">
+          <form action="../login.php" method="POST">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Usuario</label>
+              <!--<span class="glyphicon glyphicon-knight" aria-hidden="true"></span>-->
+              <input type="text" class="form-control" aria-hidden="true" id="user" name="user" placeholder="Usuario" required/>
+              <!--<i class="glyphicon glyphicon-knight form-control"></i>-->
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Contraseña</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+            </div>
+            <input type="submit" class="btn btn-default" value="Entrar"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Fin de modal inicio de sesion-->
+<!--Pie de pagina-->
+<footer class="footer" style="background:#04B4AE; text-align: center;">
+    <div class="container">
+        <p style="color: #FFFFFF; font-family: 'Times New Roman', Times, serif;font-size: 20px;">Pagina creada por:</p>
+        <a href="http://www.lookapp.mx/"><img src="../img/lookapp.png" style="width: 150px;"/></a>
+    </div>
+</footer>
+
+</body>
+</html>
